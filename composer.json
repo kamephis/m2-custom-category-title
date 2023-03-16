@@ -1,0 +1,27 @@
+{
+  "name": "kamephis/custom-category-title",
+  "description": "Custom category title for magento 2",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=8.1",
+    "kamephis/m2-base": "^1.0.0"
+  },
+  "license" : "Apache-2.0",
+  "authors": [
+    {
+      "name": "Marlon Boehland",
+      "email": "kamephis@gmail.com",
+      "homepage": "https://www.boehland.one",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Kamephis\\CustomCategoryTitle\\": ""
+    }
+  }
+}
