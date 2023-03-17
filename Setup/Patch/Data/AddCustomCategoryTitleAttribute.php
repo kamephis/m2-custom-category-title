@@ -36,7 +36,7 @@ class AddCustomCategoryTitleAttribute implements DataPatchInterface
     public function apply()
     {
         /** @var EavSetup $eavSetup */
-        $eavSetup = $this->_eavSetupFactory->create(['setup' => $this->_moduleDataSetup]);
+        $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
 
         $eavSetup->addAttribute(Category::ENTITY, 'custom_category_title', [
             'type' => 'text',
